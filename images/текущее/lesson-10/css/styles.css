@@ -1,0 +1,166 @@
+@import url('reset.css');
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open_sans/OpenSans-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open_sans/OpenSans-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open_sans/OpenSans-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/poppins/Poppins-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* header-menu */
+
+.menu {
+	display: flex;
+	gap: 10px;
+	padding: 20px;
+	justify-content: center;
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+}
+
+.menu li {
+	position: relative;
+}
+
+.menu li a {
+	display: block;
+	color: #ccc;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	background: darkblue;
+}
+
+.menu li a:hover {
+	background: rgb(16, 16, 99);
+}
+
+.menu li:hover .second-menu {
+	display: block;
+}
+
+.second-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	padding-top: 20px;
+}
+
+
+.second-menu li a {
+	background: rgb(78, 19, 78);
+}
+
+
+.yellow {
+	position: relative;
+}
+
+.yellow div {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #ccc;
+	/* display: none; */
+	opacity: 0;
+}
+
+.container:hover .yellow div {
+	/* display: block; */
+	opacity: 1;
+}
+
+.test {
+	background: #000;
+	color: #ccc;
+	position: fixed;
+	/* width: calc(50vw - 600px); */
+}
+
+.container {
+	/* 16px */
+	/* font-size: 1.2rem; */
+	line-height: 1;
+	padding: 1rem;
+
+}
+
+.container p {
+	/* font-size: 2rem; */
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	background: #ccc;
+	position: relative;
+	z-index: 1;
+}
+
+.container>div {
+	min-height: 200px;
+}
+
+.yellow {
+	background: yellow;
+}
+
+.green {
+	background: green;
+	/* position: fixed; */
+	position: sticky;
+	top: 80px;
+	z-index: 5;
+}
+
+.orange {
+	background: orange;
+	/* margin-top: -100px; */
+}
+
+.blue {
+	background: blue;
+}
+
+.red {
+	background: red;
+
+}
+
+.black {
+	background: #000;
+	position: relative;
+	z-index: 5;
+	margin-top: -50px;
+}

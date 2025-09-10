@@ -1,0 +1,130 @@
+@import url('reset.css');
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open_sans/OpenSans-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open_sans/OpenSans-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open_sans/OpenSans-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/poppins/Poppins-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	background: url('../images/white-grey-scratch-lines.png');
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	background: #ccc;
+}
+
+.container>div {
+	min-height: 200px;
+}
+
+.box {
+	/* background: linear-gradient(45deg, green 50%, yellow 50%); */
+	position: relative;
+	background: white;
+	font-size: 20px;
+
+	/* deg, rad, grad, turn */
+}
+
+.box::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 120px;
+	background: linear-gradient(transparent, white 40%);
+}
+
+.red {
+	background: radial-gradient(circle at 100px 20px, lime 50%, orange 50%);
+}
+
+.conic {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	position: relative;
+	/* background: conic-gradient(yellow 20%, red 20%, red 60%, green 60%); */
+}
+
+.conic::after {
+	content: 'test';
+	display: flex;
+	font-size: 40px;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+
+	background: #ccc;
+}
+
+.yellow {
+	background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/flower.jpg') no-repeat 50%/cover;
+	position: relative;
+	/* background: #2f303a; */
+	/* background: rgba(47, 48, 58, 0.4); */
+}
+
+/* .yellow::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, .6);
+} */
+
+.green {
+	/* background-color: green; */
+	/* background-image: url('../images/flower.jpg'); */
+	/* background-repeat: no-repeat; */
+	/* background-position: 100px 50px; */
+	/* background-size: 300px 160px; */
+
+	background: green url('../images/flower.jpg') no-repeat 50% / cover;
+	background-clip: text;
+	background-attachment: fixed;
+	color: transparent;
+	/* background-size: 150px; */
+	height: 400px;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+.orange {
+	background: orange;
+}
